@@ -5,7 +5,7 @@ import Category from "./pages/Category"
 import NotFound from "./pages/NotFound"
 import NavBar from "./components/NavBar/NavBar"
 import Footer from "./components/Layout/Footer"
-import ItemDetail from "./components/ItemDetail"
+import ItemDetailContainer from "./containers/ItemDetailContainer"
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/category" element={<Category />} /> {/* Nueva ruta */}
         <Route path="/category/:categoryId" element={<Category />} />
-        <Route path="/detalle-producto/:id" element={<ItemDetail />} />
+        <Route path="/detalle-producto/:id" element={<ItemDetailContainer />} />
         <Route path="*" element={<NotFound />} /> 
       </Routes>
       <Footer/>

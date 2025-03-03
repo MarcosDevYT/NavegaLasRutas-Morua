@@ -18,7 +18,7 @@ const InfoProducts = () => {
             La colección Florido se compone de distintos modelos, cada uno disponible en una amplia variedad de colores para adaptarse a tu estilo.
           </p>
 
-          <Button text={"Colección"} />
+          <Button href={"/category"} text={"Catalogo"} />
       </article>
       <article className="max-w-xl lg:max-w-2xl">
         <figure className="relative">
