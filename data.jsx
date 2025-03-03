@@ -1,4 +1,9 @@
-export const menuItems = ["Inicio", "Colección", "Nosotros", "Contáctanos"];
+export const menuItems = [
+  { text: "Inicio", link: "/" },
+  { text: "Decorativo", link: "/category/Decorativo" },
+  { text: "Sillas", link: "/category/Sillas" },
+  { text: "Lámparas", link: "/category/Lámparas" },
+];
 
 export const ServicesItems = [
   {
@@ -33,15 +38,23 @@ export const categoriasData = [
 export const volverLinks = [
   {
     title: "Inicio",
-    link: "#",
+    link: "/",
   },
   {
-    title: "Colección",
-    link: "#",
+    title: "Catalogo",
+    link: "/category",
   },
   {
-    title: "Ventajas",
-    link: "#",
+    title: "Sillas",
+    link: "/category/Sillas",
+  },
+  {
+    title: "Lámparas",
+    link: "/category/Lámparas",
+  },
+  {
+    title: "Decorativo",
+    link: "/category/Decorativo",
   },
 ];
 

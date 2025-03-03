@@ -1,5 +1,7 @@
-import Button from "../utils/Button"
-import Container from "../utils/Container"
+import Button from "../../Button"
+import Container from "../Container"
+
+
 
 const Hero = () => {
   return (
@@ -17,10 +19,11 @@ const Hero = () => {
           </h1>
 
           <p className="lg:text-lg max-w-md">
-            Ecommerce que solo funciona el menu de navegacion y el boton de carrito de compras. Links, botones de categorias y productos, no funcionan.
+            Ecommerce con navegación completa entre categorías, visualización de productos y detalles. 
+            La funcionalidad del carrito de compras y proceso de checkout todavia no funcionan.
           </p>
 
-          <Button text={"Comprar Ahora"} />
+          <Button href={"/category"} text={"Comprar Ahora"} />
         </div>
         <figure className="relative max-h-[650px] lg:w-1/2">
           <div className="absolute w-full h-full border-8 rounded-2xl right-10 top-10"></div>

@@ -1,5 +1,6 @@
-import Button from "../utils/Button"
-import Container from "../utils/Container"
+
+import Button from "../../Button"
+import Container from "../Container"
 
 
 const InfoProducts = () => {

@@ -1,8 +1,10 @@
-import Container from "../utils/Container"
-import TitleSection from "../utils/TitleSection"
-import Button from "../utils/Button"
-import ItemsServices from "../utils/ItemsServices"
-import { ServicesItems } from "../../../data"
+import { ServicesItems } from "../../../../data"
+import Button from "../../Button"
+import ItemsServices from "../../ItemsServices"
+import TitleSection from "../../TitleSection"
+import Container from "../Container"
+
+
 
 const Services = () => {
   return (
@@ -13,7 +15,7 @@ const Services = () => {
           <ItemsServices key={index} title={item.title} content={item.content} />
         ))}
       </article>
-      <Button text={"Descubre Mas Productos"}/>
+      <Button href={"/category"} text={"Descubre Mas Productos"}/>
     </Container>
   )
 }

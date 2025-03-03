@@ -7,7 +7,7 @@ const LinksGroup = ({ list, title }) => {
       <li className="text-2xl mb-2 md:text-4xl">{title}</li>
       {list.map((item, index) => (
         <li key={index} className="text-xl h-6 overflow-hidden">
-          <RevealText text={item.title} />
+          <RevealText to={item.link} text={item.title} />
         </li>
       ))}
     </ul>

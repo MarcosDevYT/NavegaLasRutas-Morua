@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
-import LinksAnimation from "../utils/LinksAnimation";
+import { menuItems } from "../../../data";
+import LinksAnimation from "../LinksAnimation";
 import MenuToggle from "./MenuToggle";
 import CartWidget from "./CartWidget";
-import { menuItems } from "../../../data";
+import { Link } from "react-router-dom";
 
 const NavMenu = ({ open, openMenu ,toggleMenu , toggle, }) => {
   const openCart = open;
@@ -40,11 +41,8 @@ const NavMenu = ({ open, openMenu ,toggleMenu , toggle, }) => {
     >
       <nav className="w-full shadow-md">
       <div className="max-w-[1540px] mx-auto px-6 flex justify-between items-center h-16">
-        <h2 className="font-playfart text-xl md:text-3xl">Marcos Commerce</h2>
+        <Link to={"/"} ><h2 className="font-playfart text-xl md:text-3xl">Marcos Commerce</h2> </Link>
         <div className="flex items-center gap-4 md:gap-8">
-          <div className="p-2 rounded-full shadow-md">
-            <img src="/heart-line.svg" alt="Corazon" className="w-4 md:w-6" />
-          </div>
           <CartWidget open={openCart} toggle={toggleCart} />
 
           <div className="w-0.5 h-10 bg-black" />
@@ -55,9 +53,10 @@ const NavMenu = ({ open, openMenu ,toggleMenu , toggle, }) => {
       <ul className="max-w-[1540px] mx-auto px-6 p-8 flex flex-col gap-7">
         {menuItems.map((item, index) => (
           <LinksAnimation
-            key={item}
+            link={item.link}
+            key={index}
             open={showLinks}
-            text={item}
+            text={item.text} 
             delay={index * 150}
             onClick={handleClose}
           />

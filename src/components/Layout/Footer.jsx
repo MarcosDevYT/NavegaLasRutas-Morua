@@ -1,6 +1,7 @@
-import { ayudaLinks, redesSociales, volverLinks } from "../../data"
-import Container from "./utils/Container"
-import LinksGroup from "./utils/LinksGroup"
+
+import { ayudaLinks, redesSociales, volverLinks } from "../../../data"
+import LinksGroup from "../LinksGroup"
+import Container from "./Container"
 
 const Footer = () => {
 

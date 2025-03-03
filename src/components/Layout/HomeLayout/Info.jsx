@@ -1,4 +1,4 @@
-import Container from "../utils/Container"
+import Container from "../Container"
 
 const Info = ({ className, children, barra, mensaje, icono }) => {
 

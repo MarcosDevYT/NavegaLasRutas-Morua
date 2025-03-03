@@ -1,21 +1,22 @@
-import Categorias from "../home/Categorias"
-import Hero from "../home/hero"
-import Info from "../home/Info"
-import InfoProducts from "../home/InfoProducts"
-import Productos from "../home/Productos"
-import Services from "../home/Services"
-import TitleSection from "../utils/TitleSection"
+import Categorias from "../components/Layout/HomeLayout/Categorias"
+import Hero from "../components/Layout/HomeLayout/Hero"
+import Info from "../components/Layout/HomeLayout/Info"
+import InfoProducts from "../components/Layout/HomeLayout/InfoProducts"
+import Services from "../components/Layout/HomeLayout/Services"
+import TitleSection from "../components/TitleSection"
+import ItemListContainer from "../containers/ItemListContainer"
 
 const Home = () => {
   return (
     <main className="px-6 pt-16 min-h-screen md:px-16 lg:px-28">
+ 
       <Hero />
       <Info className={"max-w-lg"} barra={true} >
         <h3 className="text-2xl">
           Marcos Commerce transforma tus espacios con sillas, lámparas y decoraciones con un enfoque contemporáneo.
         </h3>
       </Info>
-      <Productos saludo={"Bienvenido a mi E-commerce, aqui es donde se veran los productos"}/>
+      <ItemListContainer title={"Productos Destacados"} destacado={true} />
       <InfoProducts />
       <Services />
       <Categorias />

@@ -1,8 +1,10 @@
-const RevealText = ({ text, delayPerLetter = 30 }) => {
+import LinkRouter from "./LinkRouter";
+
+const RevealText = ({ to, text, delayPerLetter = 30 }) => {
   const letters = text.split("");
 
   return (
-    <div
+    <LinkRouter to={to}
       className="relative inline-block group overflow-hidden cursor-pointer"
     >
       <div className="block">
@@ -27,7 +29,7 @@ const RevealText = ({ text, delayPerLetter = 30 }) => {
           </span>
         ))}
       </div>
-    </div>
+    </LinkRouter>
   );
 };
 
